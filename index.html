@@ -213,8 +213,8 @@ section{padding:52px 24px}
 
 <script>
 function setLang(l){
-  document.querySelectorAll('.ko').forEach(el=>el.style.display=l==='en'?'none':'');
-  document.querySelectorAll('.en').forEach(el=>el.style.display=l==='en'?'':'none');
+  document.querySelectorAll('.ko').forEach(el=>el.style.display=l==='en'?'none':'block');
+  document.querySelectorAll('.en').forEach(el=>el.style.display=l==='en'?'block':'none');
   document.querySelectorAll('.lang-toggle button').forEach((b,i)=>b.classList.toggle('active',(l==='ko'&&i===0)||(l==='en'&&i===1)));
 }
 </script>
